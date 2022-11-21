@@ -24,6 +24,8 @@ body {
 
 img {
     display:block;
+    max-width: 100%;
+    height: auto;
     }
 
 span.accent {
@@ -347,7 +349,8 @@ ul, p, h1, h2, h3, h4, h5, h6 {
 .examples-list {
     display: flex;
     flex-wrap: wrap;
-       
+    margin-bottom: -30px;
+      
 }
 
 .examples-items {
@@ -369,6 +372,7 @@ ul, p, h1, h2, h3, h4, h5, h6 {
     
     padding: 20px 24px;
     border: 1px solid #EEEEEE;
+    margin-right: 20px;
    
 }
 
