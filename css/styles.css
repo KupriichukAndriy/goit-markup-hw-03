@@ -74,7 +74,6 @@ ul, p, h1, h2, h3, h4, h5, h6 {
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-    align-items: center;
 }
 
 .section {
@@ -84,6 +83,10 @@ ul, p, h1, h2, h3, h4, h5, h6 {
 
 /*-------------HEADER-----------*/
 
+.header {
+    border-bottom: 1px solid #ECECEC;;
+}
+
 .header .container {
     display:flex;
     align-items: center;
@@ -92,8 +95,6 @@ ul, p, h1, h2, h3, h4, h5, h6 {
 .header-nav {
     display:flex;
     align-items: center;
-    padding-top: 24px;
-    padding-bottom: 25px;
 }
 
 .header-list {
@@ -160,6 +161,11 @@ ul, p, h1, h2, h3, h4, h5, h6 {
     color: var(--accent-color);
 }
 
+.header-link, .header-address {
+    padding: 32px 0;
+    display: block;
+}
+
 /*--------------------MAIN------------------------*/
 
 /*-------------HERO-----------*/
@@ -212,6 +218,10 @@ ul, p, h1, h2, h3, h4, h5, h6 {
 
 /*-------------INFO-----------*/
 
+.info {
+    padding-bottom: 0;
+}
+
 .info-list {
     display: flex;
     align-content: center;
@@ -252,12 +262,17 @@ ul, p, h1, h2, h3, h4, h5, h6 {
 }
 
 /*-------------TEAM-----------*/
+.team {
+    background-color: var(--background-button-color);
+}
+
 .team-title {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
+    padding-top: 30px;
     color: var(--main-text-color);
 }
 
@@ -274,23 +289,18 @@ ul, p, h1, h2, h3, h4, h5, h6 {
     margin-right: 30px;
 }
 
+.team-title {
+    margin-bottom: 10px;
+}
+
 .team-list p {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
     color: var(--second-text-color);
 }
-
-.team-list img {
-    margin-bottom: 30px;
-}
-
-.team-list h3 {
-    margin-bottom: 10px;
-}
-
 
 /*-------------PORTFOLIO-----------*/
 
@@ -349,30 +359,21 @@ ul, p, h1, h2, h3, h4, h5, h6 {
 .examples-list {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: -30px;
+    gap: 30px;
       
 }
 
 .examples-items {
-    display: inline-block;
-    width: calc((100%-90px) / 3);
-    
-    margin-bottom: 30px;
+    width:calc((100% - 60px) / 3);
    
 }
 
-.examples-items .examples-bord {
-    display: flex;
-    flex-direction: column;
-    
-
-}
 
 .examples-bord {
     
     padding: 20px 24px;
     border: 1px solid #EEEEEE;
-    margin-right: 20px;
+    border-top: none;
    
 }
 
